@@ -31,8 +31,9 @@ GROQ_API_KEY=your_groq_api_key_here
 ```
 ---
 ## Step 4: Create a GROQ API Route
-First create a new folder called "groq" in your api's folder (the one in your app folder).
-Then create a new file called "route.js" in your groq folder (app/api/groq/route.js):
+First create a folder in your "app" folder called "api" 
+Next create a folder in the api folder called "groq"
+\Then create a new file called "route.js" in your groq folder (app/api/groq/route.js):
 
 ```js
 import { Groq } from 'groq-sdk';
@@ -97,14 +98,16 @@ export async function POST(req) {
 ```
 ---
 ## Step 5: Add ChatBot to Your Protected Page
-Now we will be connecting the Groq route you created in your backend to your front end. We will do this on the protected page you created last week. Open you protected page file and follow the code below.
+Now we will be connecting the Groq route you created in your backend to your front end. We will do this on the protected page you created last week. Open you protected page file(the one we created last week) and copy the code below.
 
 ```jsx
+'use client'
+
 import { useEffect, useState } from 'react';
 import axios from 'axios'; // NEW: For sending POST requests to the backend GROQ API
 import { onAuthStateChanged, signOut } from 'firebase/auth';
-import { auth } from '../firebase';
-import { useRouter } from 'next/router';
+import { auth } from '@/firebase';
+import { useRouter } from 'next/navigation';
 
 export default function Protected() {
   const router = useRouter();
