@@ -13,16 +13,16 @@
 
 In your project root, run:
 
-//Make sure to replace "your-project-file-name" with your actual root file name
+Make sure to replace "your-project-file-name" with your actual root file name
 
 ```bash
-cd "your-project-file-name"
+cd "project-file-name"
 npm install groq-sdk axios
 ```
 ---
 
 ## Step 3: Set Environment Variables
-Create a ".env.local" file at your project root with:
+Create a ".env.local" file at your project root(remember this is the folder that your project is in) with:
 
 Replace "your_groq_api_key_here" with the key you copied from Groq.
 
