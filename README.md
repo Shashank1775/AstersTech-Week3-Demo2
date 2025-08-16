@@ -9,9 +9,9 @@ GROQ_API_KEY=your_groq_api_key_here
 ```
 ---
 ## Step 2: Create a GROQ API Route
-Create a folder in your "app" folder called "api" 
-Next create a folder in the api folder called "groq"
-\Then create a new file called "route.js" in your groq folder (app/api/groq/route.js):
+Create a folder in your "app" folder called "api". 
+Next create a folder in the api folder called "groq". 
+Then create a new file called "route.js" in your groq folder (app/api/groq/route.js):
 
 ```js
 import { Groq } from 'groq-sdk';
