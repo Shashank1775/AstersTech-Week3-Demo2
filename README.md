@@ -1,27 +1,7 @@
 # AstersTech-Week3-Demo2
 ---
 
-## Step 1: Get Your GROQ API Key
-
-1. Go to [https://groq.com](https://groq.com) and **sign up** or **log in**.  
-2. Navigate to your account dashboard and find the section to generate or view your **API Key**.  
-3. Copy your **API Key** — you will need this for your backend integration.
-
----
-
-## Step 2: Install the GROQ SDK
-
-In your project root, run:
-
-Make sure to replace "your-project-file-name" with your actual root file name
-
-```bash
-cd "project-file-name"
-npm install groq-sdk axios
-```
----
-
-## Step 3: Set Environment Variables
+## Step 1: Set Environment Variables
 Create a ".env.local" file at your project root(remember this is the folder that your project is in) with:
 
 Replace "your_groq_api_key_here" with the key you copied from Groq.
@@ -30,7 +10,7 @@ Replace "your_groq_api_key_here" with the key you copied from Groq.
 GROQ_API_KEY=your_groq_api_key_here
 ```
 ---
-## Step 4: Create a GROQ API Route
+## Step 2: Create a GROQ API Route
 First create a folder in your "app" folder called "api" 
 Next create a folder in the api folder called "groq"
 \Then create a new file called "route.js" in your groq folder (app/api/groq/route.js):
@@ -95,6 +75,25 @@ export async function POST(req) {
     );
   }
 }
+```
+---
+## Step 3: Get Your GROQ API Key
+
+1. Go to [https://groq.com](https://groq.com) and **sign up** or **log in**.  
+2. Navigate to your account dashboard and find the section to generate or view your **API Key**.  
+3. Copy your **API Key** — you will need this for your backend integration.
+
+---
+
+## Step 4: Install the GROQ SDK
+
+In your project root, run:
+
+Make sure to replace "your-project-file-name" with your actual root file name
+
+```bash
+cd "project-file-name"
+npm install groq-sdk axios
 ```
 ---
 ## Step 5: Add ChatBot to Your Protected Page
