@@ -92,6 +92,10 @@ Make sure to replace "your-project-file-name" with your actual root file name
 
 ```bash
 cd "project-file-name"
+```
+
+Then run
+```bash
 npm install groq-sdk axios
 ```
 ---
